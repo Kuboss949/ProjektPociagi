@@ -15,9 +15,10 @@ int main()
     Train *t3=new PassengerTrain("ZXC2351", "Koleje Slaskie", 74.3, 100, 2);
     Entry e1(d1, d2, "Krakow", "Gdansk", 12, t3);
     Entry e2;
-    //t2.print();
+
+
     cout << e1 << endl;
-    e1.getTrainInfo();
+    //e1.getTrainInfo();
 
     ofstream fileBin{"data.txt", ios::binary};
     if(fileBin.good()){
@@ -31,8 +32,8 @@ int main()
     }
     fileBin.close();
     cout << e2 << endl;
-    e2.getTrainInfo();
-    //t2.print();*/
+    //e2.getTrainInfo();
+
 
 
 

@@ -73,7 +73,7 @@ void Train::readFromBinFile(ifstream &stream) {
         stream.read(&name[0], tmpSize);
 
         stream.read(reinterpret_cast<char*>(&tmpSize), sizeof(int));
-        name.resize(tmpSize);
+        owner.resize(tmpSize);
         stream.read(&owner[0], tmpSize);
 
         stream.read(reinterpret_cast<char*>(&maxVelocity), sizeof(maxVelocity));
