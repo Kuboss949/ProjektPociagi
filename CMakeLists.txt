@@ -3,5 +3,5 @@ project(untitled3)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(untitled3 src/main.cpp src/Train.cpp src/PassengerTrain.cpp src/CargoTrain.cpp src/Entry.cpp src/DateAndTime.cpp include/DateAndTime.h)
+add_executable(untitled3 src/main.cpp src/Train.cpp src/PassengerTrain.cpp src/CargoTrain.cpp src/Entry.cpp src/DateAndTime.cpp include/DateAndTime.h src/Database.cpp include/Database.h include/validation.h src/validation.cpp)
 target_include_directories(untitled3 PUBLIC include)

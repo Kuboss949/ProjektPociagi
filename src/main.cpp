@@ -4,11 +4,25 @@
 #include "CargoTrain.h"
 #include "DateAndTime.h"
 #include "Entry.h"
+#include "validation.h"
 using namespace std;
 
 int main()
 {
-    CargoTrain t1;
+    DateAndTime t1;
+    if(!validateDate("09-07-2009", t1))
+        cout << "Nie przekonwertowalo" << endl;
+    else
+        cout << t1 << endl;
+
+    if(!validateHour("00:00", t1))
+        cout << "Nie przekonwertowalo godziny" << endl;
+    else
+        cout << t1 << endl;
+
+
+
+    /*CargoTrain t1;
     CargoTrain t2("H2K85XZ", "PKP", 130.4,"coal", 321);
     DateAndTime d1(7,4,2001,13,42);
     DateAndTime d2(3,4,2001,12,23);
@@ -32,7 +46,7 @@ int main()
     }
     fileBin.close();
     cout << e2 << endl;
-    //e2.getTrainInfo();
+    //e2.getTrainInfo();*/
 
 
 

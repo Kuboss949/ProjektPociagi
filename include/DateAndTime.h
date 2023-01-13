@@ -12,6 +12,7 @@ public:
     DateAndTime();
 
     DateAndTime(const int &day, const int &month, const int &year, const int &hour, const int &minute);
+    DateAndTime(const int &day, const int &month, const int &year);
 
     int getDay() const;
 

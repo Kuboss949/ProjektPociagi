@@ -89,3 +89,8 @@ void DateAndTime::readFromBinFile(ifstream &stream) {
     }
 }
 
+DateAndTime::DateAndTime(const int &day, const int &month, const int &year):day(day),month(month),year(year) {
+    hour=4;
+    minute=20;
+}
+
