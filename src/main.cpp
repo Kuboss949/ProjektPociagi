@@ -5,21 +5,20 @@
 #include "DateAndTime.h"
 #include "Entry.h"
 #include "validation.h"
+#include "Database.h"
 using namespace std;
 
 int main()
 {
-    DateAndTime t1;
-    if(!validateDate("09-07-2009", t1))
-        cout << "Nie przekonwertowalo" << endl;
-    else
-        cout << t1 << endl;
+    Database d1("example1.txt");
 
-    if(!validateHour("00:00", t1))
-        cout << "Nie przekonwertowalo godziny" << endl;
-    else
-        cout << t1 << endl;
+    for(int i=0;i<4;i++)
+        d1.createEntry();
 
+
+    d1.printRecords();
+
+    d1.saveRecords();
 
 
     /*CargoTrain t1;

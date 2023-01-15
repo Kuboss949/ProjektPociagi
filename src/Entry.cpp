@@ -15,11 +15,12 @@ Entry::Entry() {
     departure=DateAndTime();
     fromWhere="";
     destination="";
+    platformNo=0;
     entryTrain=nullptr;
 }
 
 ostream &operator<<(ostream &lhs, const Entry &rhs) {
-    lhs<< rhs.arrival << "\t" << rhs.departure << "\t" << rhs.destination << "\t" << rhs.fromWhere << "\t" << rhs.platformNo << "\t"<< rhs.entryTrain->getName();
+    lhs<< left << setw(16) << rhs.arrival << left << setw(16) << rhs.departure << left << setw(20) << rhs.destination << left << setw(20) << rhs.fromWhere << left << setw(2) << rhs.platformNo << left << setw(25)<< rhs.entryTrain->getName() << endl;
     return lhs;
 }
 

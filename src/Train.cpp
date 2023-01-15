@@ -8,8 +8,9 @@ Train::Train()
     maxVelocity = 0.0;
 }
 
-Train::Train(string name, string owner, double maxVelocity):name(name),owner(owner),maxVelocity(maxVelocity)
+Train::Train(string name, string owner, double maxVelocity):owner(owner),maxVelocity(maxVelocity)
 {
+    setName(name);
 }
 
 void Train::print()

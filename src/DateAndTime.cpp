@@ -22,7 +22,10 @@ ostream &operator<<(ostream &lhs, const DateAndTime &rhs) {
     lhs << rhs.day << "-";
     if(rhs.month<10)
         lhs << "0";
-    lhs << rhs.month << "-" << rhs.year << " " << rhs.hour << ":";
+    lhs << rhs.month << "-" << rhs.year << " ";
+    if(rhs.hour<10)
+        lhs << "0";
+    lhs << rhs.hour;
     if(rhs.minute<10)
         lhs << "0";
     lhs << rhs.minute;

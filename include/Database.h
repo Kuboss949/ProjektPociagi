@@ -12,23 +12,18 @@ class Database {
     ofstream writing;
 public:
     Database();
-    Database(string fileName);
+    Database(const string &fileName);
 
+    void loadRecords();
+    void saveRecords();
+    void setFile(string value);
 
-    void open(string fileName);
-
-    void loadRecords(int count=0);
+    void printRecords(int count=0);
 
     void createEntry();
 
-
-
-
-
-
-
-
 };
+
 
 
 
